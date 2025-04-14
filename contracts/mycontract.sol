@@ -23,6 +23,7 @@ contract MyContract {
         owner = msg.sender;
     }
 
+
     // struct
     struct Person {
         uint age;
@@ -42,3 +43,4 @@ contract MyContract {
 
 
 }
+
