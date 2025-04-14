@@ -11,6 +11,25 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amt",
+						"type": "uint256"
+					}
+				],
+				"name": "AmountSet",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "amt",
 				"outputs": [
@@ -136,11 +155,11 @@
 	},
 	"sources": {
 		"contracts/mycontract.sol": {
-			"keccak256": "0xbbbe99c3c4d021ecb8906a4b462e747ecd6558d3b3ca95c57526d46300357b01",
+			"keccak256": "0xc12128cfd54d37316b4a78f34e03a3d4b8d483e25f216ce90f79bebddb5ea86f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://3b6c4a48d60c33a4940e191f7b3d70b74e3b7a1fd1b9b6d928ac1d5b343d45bf",
-				"dweb:/ipfs/QmNvUi53UXypSXqpoZ948XSEUKtefNrC5wUoYKck1e22dq"
+				"bzz-raw://625721a4dfd8adf938a11c6fe8d12fde941f54a9490ad460f74fa444fa6f11b2",
+				"dweb:/ipfs/QmTnVbJHY4hfCCkwVYyQRDt7JFQeHuppcvbooU7BcsE4MA"
 			]
 		}
 	},

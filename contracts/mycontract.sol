@@ -13,6 +13,9 @@ contract MyContract {
     // array
     uint[8] myarray = [1, 2, 3, 4];
 
+    //events
+    event AmountSet(address indexed sender, uint amt);
+
     // mapping
     mapping(string => address) public balances;
 
@@ -27,10 +30,15 @@ contract MyContract {
     }
 
     function setAmt(uint256 _amt) public {
+        // require(amt == _amt, "Invalid amount");
+        assert(amt >= _amt);
         amt = _amt;
+        emit AmountSet(msg.sender, _amt);
     }
 
     function getAmt() public view returns (uint256){
         return amt;
     }
+
+
 }
