@@ -1,18 +1,14 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.4.24;
+pragma solidity ^0.8.24;
 
 contract Learn1 {
-    string value;
+    string public value;
 
-    constructor() public {
+    constructor() {
         value = "myValue";
     }
 
-    function get() public view returns(string) {
-        return value;
-    }
-
-    function set(string _value) public {
+    function set(string memory _value) public {
         value = _value;
     }
 }

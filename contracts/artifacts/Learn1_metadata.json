@@ -1,58 +1,62 @@
 {
 	"compiler": {
-		"version": "0.4.26+commit.4563c3fc"
+		"version": "0.8.24+commit.e11b9ed9"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"constant": false,
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
+						"internalType": "string",
 						"name": "_value",
 						"type": "string"
 					}
 				],
 				"name": "set",
 				"outputs": [],
-				"payable": false,
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
-				"constant": true,
 				"inputs": [],
-				"name": "get",
+				"name": "value",
 				"outputs": [
 					{
+						"internalType": "string",
 						"name": "",
 						"type": "string"
 					}
 				],
-				"payable": false,
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [],
-				"payable": false,
-				"stateMutability": "nonpayable",
-				"type": "constructor"
 			}
 		],
 		"devdoc": {
-			"methods": {}
+			"kind": "dev",
+			"methods": {},
+			"version": 1
 		},
 		"userdoc": {
-			"methods": {}
+			"kind": "user",
+			"methods": {},
+			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
 			"contracts/#1.sol": "Learn1"
 		},
-		"evmVersion": "byzantium",
+		"evmVersion": "shanghai",
 		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
 		"optimizer": {
 			"enabled": false,
 			"runs": 200
@@ -61,9 +65,11 @@
 	},
 	"sources": {
 		"contracts/#1.sol": {
-			"keccak256": "0x564cbe08aa1ecbc57a4a5de9fb70a3d06c85851a78482805c0643244b99ef230",
+			"keccak256": "0x77762288d02b9380b9f37f500f3bb16f662c9486c3502d7a9a5815c5f4b846bd",
+			"license": "MIT",
 			"urls": [
-				"bzzr://d2b5ad568de24b3c3b93037380fdbbe03d1ab24ecea5d46fd3439289a2022203"
+				"bzz-raw://e5eb84a40cff59e0993972753444093afa5f35246a69d547b6a81cf08c5c07c5",
+				"dweb:/ipfs/QmS8Fc387TVfzAXS1FuZCDW4Nz5MPnrjswdTcEvoWpbt4m"
 			]
 		}
 	},
